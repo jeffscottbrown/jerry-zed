@@ -1,6 +1,7 @@
 name = "Jerry"
 grammar = "jerry"
 path_suffixes = ["jer"]
+language_servers = ["jerry-lsp"]
 line_comment = "//"
 block_comment = ["/*", "*/"]
 
