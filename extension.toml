@@ -11,7 +11,3 @@ repository = "https://github.com/jeffscottbrown/jerry-zed"
 commit = "492bdbb9d58cae9f5b5f634840406b4508fb8bc8"
 path = "grammars/jerry"
 
-[[languages]]
-name = "Jerry"
-grammar = "jerry"
-path_suffixes = ["jer"]
