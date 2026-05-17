@@ -1,0 +1,17 @@
+id = "jerry"
+name = "Jerry"
+description = "Jerry language support for Zed — syntax highlighting, bracket matching, indentation, and document outline."
+version = "0.1.0"
+schema_version = 1
+authors = ["Jeff Brown"]
+repository = "https://github.com/jeffscottbrown/jerry-zed"
+
+[grammars.jerry]
+repository = "https://github.com/jeffscottbrown/jerry-zed"
+commit = "PLACEHOLDER_COMMIT_SHA"
+path = "grammars/jerry"
+
+[languages.jerry]
+name = "Jerry"
+grammar = "jerry"
+path_suffixes = ["jer"]

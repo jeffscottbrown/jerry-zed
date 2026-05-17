@@ -1,0 +1,77 @@
+{
+  "Function declaration": {
+    "prefix": "fn",
+    "body": "fn ${1:name}(${2:params}): ${3:void} {\n\t${4}\n}",
+    "description": "Declare a function"
+  },
+  "Function expression (closure)": {
+    "prefix": "fnx",
+    "body": "fn(${1:params}): ${2:void} {\n\t${3}\n}",
+    "description": "Anonymous function / closure"
+  },
+  "Class declaration": {
+    "prefix": "class",
+    "body": "class ${1:Name} {\n\t${2:field}: ${3:int};\n\n\tfn new(${4}) {\n\t\t${5}\n\t}\n}",
+    "description": "Declare a class"
+  },
+  "Class with inheritance": {
+    "prefix": "classe",
+    "body": "class ${1:Name} extends ${2:Base} {\n\tfn new(${3}) {\n\t\t${4}\n\t}\n}",
+    "description": "Declare a class that extends a base class"
+  },
+  "Variable declaration (typed)": {
+    "prefix": "let",
+    "body": "let ${1:name}: ${2:int} = ${3:0};",
+    "description": "Declare a typed variable"
+  },
+  "Variable declaration (inferred)": {
+    "prefix": "leti",
+    "body": "let ${1:name} = ${2:value};",
+    "description": "Declare a variable with inferred type"
+  },
+  "If statement": {
+    "prefix": "if",
+    "body": "if ${1:condition} {\n\t${2}\n}",
+    "description": "If statement"
+  },
+  "If-else statement": {
+    "prefix": "ife",
+    "body": "if ${1:condition} {\n\t${2}\n} else {\n\t${3}\n}",
+    "description": "If-else statement"
+  },
+  "While loop": {
+    "prefix": "while",
+    "body": "while ${1:condition} {\n\t${2}\n}",
+    "description": "While loop"
+  },
+  "For loop": {
+    "prefix": "for",
+    "body": "for (let ${1:i}: int = 0; ${1:i} < ${2:n}; ${1:i}++) {\n\t${3}\n}",
+    "description": "Numeric for loop"
+  },
+  "Include stdlib module": {
+    "prefix": "inc",
+    "body": "include @${1:string}",
+    "description": "Include a stdlib module"
+  },
+  "Include remote module": {
+    "prefix": "incr",
+    "body": "include \"${1:github.com/owner/repo}\"",
+    "description": "Include a remote module"
+  },
+  "Print line": {
+    "prefix": "print",
+    "body": "print(${1:value});",
+    "description": "Print a value with newline"
+  },
+  "Return statement": {
+    "prefix": "ret",
+    "body": "return ${1:value};",
+    "description": "Return a value"
+  },
+  "New expression": {
+    "prefix": "new",
+    "body": "new ${1:ClassName}(${2})",
+    "description": "Create a new class instance"
+  }
+}
