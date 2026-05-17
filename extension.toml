@@ -1,11 +1,19 @@
 id = "jerry"
 name = "Jerry"
-description = "Jerry language support for Zed — syntax highlighting, bracket matching, indentation, and document outline."
-version = "0.2.0"
+description = "Jerry language support for Zed — syntax highlighting, bracket matching, indentation, document outline, and LSP completions/diagnostics."
+version = "0.3.0"
 schema_version = 1
 authors = ["Jeff Brown"]
 repository = "https://github.com/jeffscottbrown/jerry-zed"
 
+[lib]
+kind = "Rust"
+version = "0.7.0"
+
 [grammars.jerry]
-repository = "https://github.com/jeffscottbrown/tree-sitter-jerry"
-commit = "dbca54a1bacc6d90b289a81ad41c012b75c91555"
+repository = "https://github.com/jeffscottbrown/jerry-lang"
+commit = "2892b5607abdd2fed300d8a9345b9121a95c4b00"
+path = "tree-sitter-jerry"
+
+[language_servers.jerry-lsp]
+languages = ["Jerry"]
