@@ -10,3 +10,9 @@ repository = "https://github.com/jeffscottbrown/jerry-zed"
 repository = "https://github.com/jeffscottbrown/tree-sitter-jerry"
 commit = "dbca54a1bacc6d90b289a81ad41c012b75c91555"
 
+[language_servers.jerry-lsp]
+language = "Jerry"
+
+[language_servers.jerry-lsp.binary]
+path = "jerry"
+args = ["lsp"]
