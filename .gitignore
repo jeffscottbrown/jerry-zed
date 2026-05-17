@@ -1,0 +1,3 @@
+# Zed clones the tree-sitter grammar repo here and compiles it to WASM.
+# Both are build artifacts — do not commit.
+grammars/
