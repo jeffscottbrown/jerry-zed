@@ -7,7 +7,6 @@ authors = ["Jeff Brown"]
 repository = "https://github.com/jeffscottbrown/jerry-zed"
 
 [grammars.jerry]
-repository = "https://github.com/jeffscottbrown/jerry-zed"
-commit = "492bdbb9d58cae9f5b5f634840406b4508fb8bc8"
-path = "grammars/jerry"
+repository = "https://github.com/jeffscottbrown/tree-sitter-jerry"
+commit = "dbca54a1bacc6d90b289a81ad41c012b75c91555"
 
