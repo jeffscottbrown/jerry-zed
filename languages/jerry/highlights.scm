@@ -38,6 +38,11 @@
 
 (primitive_type) @type.builtin
 
+; map<K, V> — highlight the 'map' keyword and the angle brackets
+(map_type "map" @type.builtin)
+(map_type "<" @punctuation.bracket)
+(map_type ">" @punctuation.bracket)
+
 ; User-defined class names at declaration site
 (class_declaration name: (identifier) @type)
 (new_expression class: (identifier) @type)
@@ -62,7 +67,7 @@
 (call_expression
   function: (identifier) @function.builtin
   (#match? @function.builtin
-    "^(print|println|write|len|push|exit|panic|args|read_stdin|print_err|read_file|write_file|each_line|char_at|string_slice|char_to_string|int_to_string|float_to_string|int_abs|int_max|int_min|float_abs|float_max|float_min|bool_to_string)$"))
+    "^(print|println|write|len|push|exit|panic|args|read_stdin|print_err|read_file|write_file|each_line|char_at|string_slice|char_to_string|int_to_string|float_to_string|int_abs|int_max|int_min|float_abs|float_max|float_min|bool_to_string|map_set|map_get|map_has|map_delete|map_len|map_keys)$"))
 
 ; ------------------------------------------------------------
 ; Variables & parameters
