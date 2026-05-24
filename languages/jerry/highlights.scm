@@ -12,6 +12,7 @@
   "extends"
   "new"
   "let"
+  "extern"
 ] @keyword
 
 "fn" @keyword.function
@@ -56,8 +57,9 @@
 ; ------------------------------------------------------------
 
 ; Declaration names
-(function_declaration name: (identifier) @function)
-(method_declaration   name: (identifier) @function.method)
+(function_declaration        name: (identifier) @function)
+(extern_function_declaration name: (identifier) @function)
+(method_declaration          name: (identifier) @function.method)
 
 ; Call sites — generic
 (call_expression function: (identifier) @function.call)
@@ -67,7 +69,7 @@
 (call_expression
   function: (identifier) @function.builtin
   (#match? @function.builtin
-    "^(print|println|write|len|push|exit|panic|args|read_stdin|print_err|read_file|write_file|each_line|char_at|string_slice|char_to_string|int_to_string|float_to_string|int_abs|int_max|int_min|float_abs|float_max|float_min|bool_to_string|map_set|map_get|map_has|map_delete|map_len|map_keys)$"))
+    "^(print|println|write|flush_stdout|len|push|exit|panic|args|read_stdin|print_err|read_file|write_file|delete_file|each_line|is_dir|list_dir|exec|getenv|char_at|string_slice|char_to_string|int_to_string|float_to_string|string_to_int|string_contains|string_starts_with|string_ends_with|string_index_of|string_to_lower|string_to_upper|string_trim|string_replace|read_bytes|now_millis|now_seconds|now_string|int_abs|int_max|int_min|float_abs|float_max|float_min|bool_to_string|map_set|map_get|map_has|map_delete|map_len|map_keys)$"))
 
 ; ------------------------------------------------------------
 ; Variables & parameters
@@ -91,6 +93,7 @@
 ; ------------------------------------------------------------
 
 (string_literal)  @string
+(char_literal)    @character
 (integer_literal) @number
 (float_literal)   @number.float
 

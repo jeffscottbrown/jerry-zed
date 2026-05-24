@@ -4,6 +4,11 @@
     "body": "fn ${1:name}(${2:params}): ${3:void} {\n\t${4}\n}",
     "description": "Declare a function"
   },
+  "Extern function declaration": {
+    "prefix": "ext",
+    "body": "extern fn ${1:name}(${2:params}): ${3:void};",
+    "description": "Declare an external C/NASM function"
+  },
   "Function expression (closure)": {
     "prefix": "fnx",
     "body": "fn(${1:params}): ${2:void} {\n\t${3}\n}",
