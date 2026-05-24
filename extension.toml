@@ -1,7 +1,7 @@
 id = "jerry"
 name = "Jerry"
 description = "Jerry language support for Zed — syntax highlighting, bracket matching, indentation, document outline, and LSP completions/diagnostics."
-version = "0.5.0"
+version = "0.8.0"
 schema_version = 1
 authors = ["Jeff Brown"]
 repository = "https://github.com/jeffscottbrown/jerry-zed"
