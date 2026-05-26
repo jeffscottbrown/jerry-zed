@@ -8,6 +8,7 @@
 
 [
   "include"
+  "enum"
   "class"
   "extends"
   "new"
@@ -47,6 +48,10 @@
 ; User-defined class names at declaration site
 (class_declaration name: (identifier) @type)
 (new_expression class: (identifier) @type)
+
+; Enum declarations — name is a type, variants are constants
+(enum_declaration name: (identifier) @type)
+(enum_variant name: (identifier) @constant)
 
 ; Type identifiers in type-annotation positions
 (type_identifier) @type

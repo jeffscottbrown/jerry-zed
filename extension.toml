@@ -12,7 +12,7 @@ version = "0.7.0"
 
 [grammars.jerry]
 repository = "https://github.com/jeffscottbrown/jerry-lang"
-commit = "f14d9c5258c676facb3e50558b7f4447111ee7bd"
+commit = "d117185513b7107ef50ee05ff652c94d4e1e4f28"
 path = "tree-sitter-jerry"
 
 [language_servers.jerry-lsp]
